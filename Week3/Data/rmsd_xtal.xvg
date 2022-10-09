@@ -1,0 +1,24 @@
+# This file was created Sun Oct  9 12:14:54 2022
+# Created by:
+#                       :-) GROMACS - gmx rms, 2020.4 (-:
+# 
+# Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+# Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+# Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/fm1484/comp-lab-class/Week3/Data
+# Command line:
+#   gmx_mpi rms -s ../Setup/em.tpr -f md_0_50_noPBC.xtc -o rmsd_xtal.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0335877
+   0.0100000    0.0679682
+   0.0200000    0.0611827
+   0.0300000    0.0682757
+   0.0400000    0.0819852
+   0.0500000    0.0825097

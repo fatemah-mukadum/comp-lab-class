@@ -1,0 +1,24 @@
+# This file was created Sun Oct  9 12:13:36 2022
+# Created by:
+#                       :-) GROMACS - gmx rms, 2020.4 (-:
+# 
+# Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+# Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+# Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/fm1484/comp-lab-class/Week3/Data
+# Command line:
+#   gmx_mpi rms -s md_0_50.tpr -f md_0_50_noPBC.xtc -o rmsd.xvg -tu ns
+# gmx rms is part of G R O M A C S:
+#
+# Good gRace! Old Maple Actually Chews Slate
+#
+@    title "RMSD"
+@    xaxis  label "Time (ns)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0004985
+   0.0100000    0.0573735
+   0.0200000    0.0547627
+   0.0300000    0.0640603
+   0.0400000    0.0764328
+   0.0500000    0.0754761
