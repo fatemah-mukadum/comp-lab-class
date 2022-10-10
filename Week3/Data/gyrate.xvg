@@ -1,0 +1,33 @@
+# This file was created Mon Oct 10 13:56:16 2022
+# Created by:
+#                      :-) GROMACS - gmx gyrate, 2020.4 (-:
+# 
+# Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+# Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+# Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/fm1484/comp-lab-class/Week3/Data
+# Command line:
+#   gmx_mpi gyrate -s md_0_50.tpr -f ../../md_0_50_noPBC.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.40922      1.2056     1.03361     1.20414
+        10     1.41323     1.20591     1.03818     1.20929
+        20     1.42134     1.21885     1.04758     1.20721
+        30     1.41801     1.21612     1.03649      1.2117
+        40     1.42055     1.21032      1.0513     1.21071
+        50     1.42071     1.21303     1.04978      1.2097

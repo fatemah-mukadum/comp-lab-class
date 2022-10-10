@@ -1,4 +1,4 @@
-# This file was created Sun Oct  9 12:13:36 2022
+# This file was created Mon Oct 10 13:55:02 2022
 # Created by:
 #                       :-) GROMACS - gmx rms, 2020.4 (-:
 # 
@@ -6,10 +6,10 @@
 # Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
 # Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/fm1484/comp-lab-class/Week3/Data
 # Command line:
-#   gmx_mpi rms -s md_0_50.tpr -f md_0_50_noPBC.xtc -o rmsd.xvg -tu ns
+#   gmx_mpi rms -s md_0_50.tpr -f ../../md_0_50_noPBC.xtc -o rmsd.xvg -tu ns
 # gmx rms is part of G R O M A C S:
 #
-# Good gRace! Old Maple Actually Chews Slate
+# Guyana Rwanda Oman Macau Angola Cameroon Senegal
 #
 @    title "RMSD"
 @    xaxis  label "Time (ns)"

@@ -1,0 +1,33 @@
+# This file was created Mon Oct 10 13:56:06 2022
+# Created by:
+#                      :-) GROMACS - gmx gyrate, 2020.4 (-:
+# 
+# Executable:   /share/apps/gromacs/2020.4/openmpi/intel/bin/gmx_mpi
+# Data prefix:  /share/apps/gromacs/2020.4/openmpi/intel
+# Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/fm1484/comp-lab-class/Week3/Data
+# Command line:
+#   gmx_mpi gyrate -s md_0_50.tpr -f ../../md_0_50_noPBC.xtc -o gyrate.xvg
+# gmx gyrate is part of G R O M A C S:
+#
+# Good ROcking Metal Altar for Chronical Sinners
+#
+@    title "Radius of gyration (total and around axes)"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "Rg (nm)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Rg"
+@ s1 legend "Rg\sX\N"
+@ s2 legend "Rg\sY\N"
+@ s3 legend "Rg\sZ\N"
+         0     1.37685     1.19007     1.00165     1.17126
+        10     1.38197     1.19132     1.00625      1.1781
+        20     1.38878     1.20368     1.01363     1.17522
+        30     1.38615     1.20244     1.00299      1.1794
+        40     1.38968     1.19764     1.01919      1.1787
+        50     1.38755     1.19741     1.01607      1.1766
