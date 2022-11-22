@@ -1,0 +1,49 @@
+Electrostatic potential parameters
+
+Grid information (see 1_default_grid.dat in Angstrom)
+    Number of grid points:            773
+
+Quantum electrostatic potential (see 1_default_grid_esp.dat)
+
+Constraints
+    Charge constraints
+        Total charge of  -0.65771456 on the set   1
+        Total charge of   0.68267197 on the set   2
+        Total charge of  -0.56770471 on the set   3
+        Total charge of  -0.11560010 on the set   4
+        Total charge of   0.30462169 on the set   5
+        Total charge of  -0.59376361 on the set   6
+        Total charge of   0.34062907 on the set   7
+        Total charge of  -0.31094079 on the set   8
+        Total charge of  -0.02553179 on the set   9
+        Total charge of   0.47952138 on the set  10
+        Total charge of   0.08794233 on the set  11
+        Total charge of   0.06731973 on the set  12
+        Total charge of   0.15301584 on the set  13
+        Total charge of   0.15553354 on the set  14
+
+Restraint
+    Hyperbolic restraint to a charge of zero
+    Hydrogen atoms are not restrained
+    resp_a:                           0.0010
+    resp_b:                           0.1000
+
+Fit
+
+Electrostatic Potential Charges
+   Center  Symbol       ESP      RESP
+      1    O      -0.65771456 -0.65771456
+      2    C       0.68267197  0.68267197
+      3    O      -0.56770471 -0.56770471
+      4    C      -0.11560010 -0.11560010
+      5    C       0.30462169  0.30462169
+      6    N      -0.59376361 -0.59376361
+      7    C       0.34062907  0.34062907
+      8    C      -0.31094079 -0.31094079
+      9    C      -0.02553179 -0.02553179
+     10    H       0.47952138  0.47952138
+     11    H       0.08794233  0.08794233
+     12    H       0.06731973  0.06731973
+     13    H       0.15301584  0.15301584
+     14    H       0.15553354  0.15553354
+Total Charge:     -0.00000000  0.00000000
