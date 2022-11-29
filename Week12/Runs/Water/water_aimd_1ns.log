@@ -1,0 +1,408 @@
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2022-11-29 14:52:19.862
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cs004.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                                fm1484
+ ***** **    ** ** **   PROGRAM PROCESS ID                                832103
+  **** **  *******  **  PROGRAM STARTED IN /scratch/work/courses/CHEM-GA-2671-20
+                                           22fa/fm1484/comp-lab-class/Week12/Run
+                                           s/Water
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                 water.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          water.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                             WATER_AIMD_1ns
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197477664     197477664     197477664     197477664
+ MEMORY| MemFree             137178472     137178472     137179984     137179228
+ MEMORY| Buffers                   132           132           132           132
+ MEMORY| Cached               18717052      18717052      18717052      18717052
+ MEMORY| Slab                  4152504       4152504       4152504       4152504
+ MEMORY| SReclaimable          3278344       3278344       3278344       3278344
+ MEMORY| MemLikelyFree       159174000     159174000     159175512     159174756
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/    The specified OLD file <HFX_BASIS> cannot be opened. It does not  *
+ *    |       exist. Data directory path: /home/wang/cp2k-20201212/cp2k/data   *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   common/cp_files.F:395 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            3 read_qs_kind
+            2 create_qs_kind_set
+            1 CP2K
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2022-11-29 14:54:54.577
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cs006.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                                fm1484
+ ***** **    ** ** **   PROGRAM PROCESS ID                                986351
+  **** **  *******  **  PROGRAM STARTED IN /scratch/work/courses/CHEM-GA-2671-20
+                                           22fa/fm1484/comp-lab-class/Week12/Run
+                                           s/Water
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                 water.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          water.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                             WATER_AIMD_1ns
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197477664     197477664     197477664     197477664
+ MEMORY| MemFree             129587528     129587528     129588088     129588041
+ MEMORY| Buffers                     8             8             8             8
+ MEMORY| Cached               34803320      34803320      34803320      34803320
+ MEMORY| Slab                  6140992       6140992       6140992       6140992
+ MEMORY| SReclaimable          4996936       4996936       4996936       4996936
+ MEMORY| MemLikelyFree       169387792     169387792     169388352     169388305
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/    The specified OLD file <HFX_BASIS> cannot be opened. It does not  *
+ *    |       exist. Data directory path: /home/wang/cp2k-20201212/cp2k/data   *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   common/cp_files.F:395 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            3 read_qs_kind
+            2 create_qs_kind_set
+            1 CP2K
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2022-11-29 14:57:00.998
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cs006.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                                fm1484
+ ***** **    ** ** **   PROGRAM PROCESS ID                                986714
+  **** **  *******  **  PROGRAM STARTED IN /scratch/work/courses/CHEM-GA-2671-20
+                                           22fa/fm1484/comp-lab-class/Week12/Run
+                                           s/Water
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                 water.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          water.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                             WATER_AIMD_1ns
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197477664     197477664     197477664     197477664
+ MEMORY| MemFree             124487284     124487284     124488796     124488082
+ MEMORY| Buffers                     8             8             8             8
+ MEMORY| Cached               34886896      34886896      34886896      34886896
+ MEMORY| Slab                  6142168       6142168       6142168       6142168
+ MEMORY| SReclaimable          4996896       4996896       4996896       4996896
+ MEMORY| MemLikelyFree       164371084     164371084     164372596     164371882
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/    The specified OLD file <GTH_POTENTIALS> cannot be opened. It does *
+ *    |     not exist. Data directory path: /home/wang/cp2k-20201212/cp2k/data *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   common/cp_files.F:395 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            3 read_qs_kind
+            2 create_qs_kind_set
+            1 CP2K
+ DBCSR| CPU Multiplication driver                                           XSMM
+ DBCSR| Multrec recursion limit                                              512
+ DBCSR| Multiplication stack size                                           1000
+ DBCSR| Maximum elements for images                                    UNLIMITED
+ DBCSR| Multiplicative factor virtual images                                   1
+ DBCSR| Use multiplication densification                                       T
+ DBCSR| Multiplication size stacks                                             3
+ DBCSR| Use memory pool for CPU allocation                                     F
+ DBCSR| Number of 3D layers                                               SINGLE
+ DBCSR| Use MPI memory allocation                                              F
+ DBCSR| Use RMA algorithm                                                      F
+ DBCSR| Use Communication thread                                               T
+ DBCSR| Communication thread load                                             87
+ DBCSR| MPI: My node id                                                        0
+ DBCSR| MPI: Number of nodes                                                  12
+ DBCSR| OMP: Current number of threads                                         1
+ DBCSR| OMP: Max number of threads                                             1
+ DBCSR| Split modifier for TAS multiplication algorithm                  1.0E+00
+
+
+  **** **** ******  **  PROGRAM STARTED AT               2022-11-29 14:58:48.766
+ ***** ** ***  *** **   PROGRAM STARTED ON                     cs006.hpc.nyu.edu
+ **    ****   ******    PROGRAM STARTED BY                                fm1484
+ ***** **    ** ** **   PROGRAM PROCESS ID                                987239
+  **** **  *******  **  PROGRAM STARTED IN /scratch/work/courses/CHEM-GA-2671-20
+                                           22fa/fm1484/comp-lab-class/Week12/Run
+                                           s/Water
+
+ CP2K| version string:                    CP2K version 8.0 (Development Version)
+ CP2K| source code revision number:                                  git:8c64c6e
+ CP2K| cp2kflags: omp libint fftw3 libxc elpa parallel mpi3 scalapack xsmm max_c
+ CP2K|            ontr=4 mkl
+ CP2K| is freely available from                            https://www.cp2k.org/
+ CP2K| Program compiled at                          Sat Dec 12 18:27:15 EST 2020
+ CP2K| Program compiled on                                     cs001.nyu.cluster
+ CP2K| Program compiled for                                            nyu-intel
+ CP2K| Data directory path                    /home/wang/cp2k-20201212/cp2k/data
+ CP2K| Input file name                                                 water.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name                                           HFX_BASIS
+ GLOBAL| Potential file name                                      GTH_POTENTIALS
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                          water.xyz
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                             WATER_AIMD_1ns
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Preferred diagonalization lib.                                     ELPA
+ GLOBAL| Run type                                                             MD
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| MPI I/O enabled                                                       T
+ GLOBAL| Total number of message passing processes                            12
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+ GLOBAL| CPU model name             Intel(R) Xeon(R) Platinum 8268 CPU @ 2.90GHz
+ GLOBAL| CPUID                                                              1003
+ GLOBAL| Compiled for CPUID                                                    0
+
+ *** HINT in environment.F:801 :: The compiler target flags (generic) used ***
+ *** to build this binary cannot exploit all extensions of this CPU model  ***
+ *** (x86_avx512). Consider compiler target flags as part of FCFLAGS and   ***
+ *** CFLAGS (ARCH file).                                                   ***
+
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal            197477664     197477664     197477664     197477664
+ MEMORY| MemFree             119007884     119007884     119008388     119008346
+ MEMORY| Buffers                     8             8             8             8
+ MEMORY| Cached               34970848      34970848      34970848      34970848
+ MEMORY| Slab                  6144480       6144480       6144480       6144480
+ MEMORY| SReclaimable          4996680       4996680       4996680       4996680
+ MEMORY| MemLikelyFree       158975420     158975420     158975924     158975882
+
+ 
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K developers group (2000 - 2020)           **
+ **                      J. Chem. Phys. 152, 194103 (2020)                    **
+ **                                                                           **
+ *******************************************************************************
+
+ *******************************************************************************
+ *   ___                                                                       *
+ *  /   \                                                                      *
+ * [ABORT]                                                                     *
+ *  \___/    The specified OLD file <dftd3.dat> cannot be opened. It does not  *
+ *    |       exist. Data directory path: /home/wang/cp2k-20201212/cp2k/data   *
+ *  O/|                                                                        *
+ * /| |                                                                        *
+ * / \                                                   common/cp_files.F:395 *
+ *******************************************************************************
+
+
+ ===== Routine Calling Stack ===== 
+
+            3 qs_dispersion_pairpot_init
+            2 qs_init_subsys
+            1 CP2K
