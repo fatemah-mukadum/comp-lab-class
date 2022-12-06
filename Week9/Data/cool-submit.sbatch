@@ -9,4 +9,4 @@
 
 source /scratch/work/courses/CHEM-GA-2671-2022fa/software/lammps-gcc-30Oct2022/setup_lammps.bash
 
-bash create.cool.sh
+bash prod.runs.sh
