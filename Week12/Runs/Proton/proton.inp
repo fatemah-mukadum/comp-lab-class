@@ -4,7 +4,7 @@
   ! various runtypes (energy, geo_opt, etc.) available.
   RUN_TYPE MD             
   ! limit the runs to 5min
-  WALLTIME 1800
+  WALLTIME 21600
   ! reduce the amount of IO
   IOLEVEL  LOW 
 &END GLOBAL
@@ -141,7 +141,7 @@
    ENSEMBLE NVT  ! sampling the canonical ensemble, accurate properties might need NVE
    TEMPERATURE [K] 300
    TIMESTEP [fs] 0.5
-   STEPS 1000
+   STEPS 2000
    # GLE thermostat as generated at http://epfl-cosmo.github.io/gle4md 
    # GLE provides an effective NVT sampling.
    &THERMOSTAT
@@ -181,6 +181,4 @@
    &END RESTART
   &END PRINT
 &END
-&EXT_RESTART
-  RESTART_FILE_NAME PROTON-1.restart
 &END
